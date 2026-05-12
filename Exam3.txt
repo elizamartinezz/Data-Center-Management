@@ -1,0 +1,239 @@
+Instruction Decoder	Translates binary opcode into control signals after instruction fetch.
+
+ALU operations	Performs arithmetic and logical operations like addition and AND.
+
+Program Counter	Holds memory address of next instruction to be fetched and executed.
+
+Q: What happens to the Program Counter after an instruction executes?	A: It automatically increments to the next instruction (unless changed by a jump/branch).
+
+Q: What does Memory store?	Both instructions and data.
+
+Q: What does ALE stand for?	ALU Enable.
+
+Q: What do ALX and ALY control?	A: They select the ALU function.
+
+Q: What is AOE?	A: A register tri-state output enable.
+
+Q: What is ISA?	The interface/contract between software and hardware.
+
+Q: What does ISA define?	Instructions, data types, registers, addressing modes, and memory architecture.
+
+Q: Why is ISA important?	It abstracts hardware so software can control it.
+
+Q: What is Assembly language?	A human-readable version of machine code (e.g., ADD, SUB, LDA).
+
+Q: What is an Operating System (OS)?	A: A program that acts as an intermediary between users and hardware.
+
+Q: Main purpose of OS?	A: Resource management and providing user interface.
+
+Q: What hardware does the OS control?	CPU, GPU, memory, disks, network, I/O devices.
+
+Q: What is resource management?	A: Allocating CPU, memory, and storage efficiently.
+
+Q: What is task scheduling?	Managing multiple processes to run concurrently.
+
+Q: Why is security important in OS?	Prevents unauthorized access and interference between programs.
+
+Q: What is file management?	Organizing and managing files and directories.
+
+Q: What is a process?	An abstraction giving the illusion of being the only job running.
+
+Q: What is a thread?	A lightweight execution unit within a process.
+
+Q: Why is message passing important?	Enables communication between processes.
+
+Q: Why separate mechanisms and policies?	Flexibility and better system design.
+
+Q: What are the two execution modes?	User mode and Kernel mode.
+
+Q: What is memory protection?	Prevents processes from accessing unauthorized memory.
+
+Q: What is a timer interrupt used for?	Enables process scheduling and time sharing.
+
+Q: Examples of privileged instructions?	I/O operations, disabling interrupts, context switching.
+
+Q: After a trap or interrupt finishes, what happens?	CPU returns to the original program.
+
+Q: Cloud OS main goal?	Efficient and fair resource sharing.
+
+Q: What is virtualization?	Creating virtual/logical versions of computers.
+
+Q: What is OS virtualization?	Creating virtual versions of machines, memory, networks, and other resources.
+
+Q: What is a Virtual Machine (VM)?	A software-based emulation of a physical computer system.
+
+Q: What provides isolation between VMs?	The hypervisor (Virtual Machine Monitor).
+
+Q: What is a Hypervisor (VMM)?	Software that runs multiple VMs on a single physical machine.
+
+Q: What is the difference between Host and Guest?	Host runs the hypervisor; Guest is the VM running under it.
+
+Q: What is a Type 1 (Bare-Metal) Hypervisor?	Runs directly on hardware → Hypervisor → VMs → Guest OS → Apps.
+
+Q: What is a Type 2 (Hosted) Hypervisor?	Runs on top of a host OS → Host OS → Hypervisor → VMs.
+
+Q: What does the hypervisor virtualize?	CPU scheduling, memory, storage, networking, and isolation.
+
+Q: What are the privilege rings with virtualization?	Ring -1: Hypervisor, Ring 0: Guest Kernel, Ring 3: Applications.
+
+Q: What is Interpretation in virtualization?	A: Software inspects and executes every instruction (slow).
+
+Q: What is Direct Execution/Interposition?	Non-privileged instructions run natively; privileged ones are intercepted.
+
+Q: What happens when a guest executes a privileged instruction?	The hypervisor traps and emulates it.
+
+Q: Why does the hypervisor not trust the guest OS?	Guest OS may be compromised (zero-trust model).
+
+Q: What is VM Transparency?	Ability to run a stock OS without modification inside a VM.
+
+Q: What is Virtual Machine Introspection (VMI)?	Monitoring and analyzing a VM from outside the guest OS.
+
+Q: Why is VMI useful for security?	Detects hidden malware without relying on the guest OS.
+
+Q: What is the threat model in virtualization security?	A: Guest OS may be malicious or compromised.
+
+Q: Difference between Host-based and Network-based IDS?	Host-based: high visibility, low resistance. Network-based: low visibility, high resistance.
+
+Q: What does a VMI-based IDS monitor?	Memory, CPU registers, system calls, kernel structures, interrupts.
+
+Q: What are common weaknesses of VMI/Hypervisor security?	Guest detects hypervisor, attacks hypervisor, fools IDS, or compromises policy engine.
+
+Q: What is the main advantage of a Virtual Machine (VM) in terms of security?	Strong isolation — each VM has its own complete OS.
+
+Q: One key benefit of VMs over containers is:	OS flexibility — you can run different OSs per VM.
+
+Q: A major disadvantage of VMs is:	High overhead — more CPU, memory, and storage usage.
+
+Q: Why do VMs have slow startup times?	Each VM boots a full operating system.
+
+Q: What is a container?	A lightweight, standalone environment packaging an application with its dependencies.
+
+Q: Containers share what with the host OS?	The kernel, making them lightweight and fast to start.
+
+Q: One limitation of containers is:	Weaker isolation due to shared OS kernel.
+
+Q: Why are containers portable?	They package all dependencies and run consistently across environments.
+
+Q: Docker is:	A: An open-source platform for containerization.
+
+Q: Name the two editions of Docker.	Community Edition (free) and Enterprise Edition (paid).
+
+Q: What is the Docker Engine responsible for?	Running containers and managing container lifecycle.
+
+Q: Components of Docker runtime include:	Containerd, Shim, Runc, Docker Daemon, Docker Client.
+
+Q: What is Docker Compose used for?	Defining multi-container applications with configuration in a YAML file.
+
+Q: Docker Swarm uses what model for nodes?	Manager and Worker model — managers manage state, workers run containers.
+
+Q: In a Swarm, what is a service?	A definition of content managed by the swarm, deployed as containers across nodes.
+
+Q: How does Docker Swarm handle networking?	Each container gets the service name as hostname; Swarm provides its own DNS.
+
+Q: Kubernetes differs from Swarm in that it:	Supports advanced orchestration, complex setups, master/worker architecture, and large-scale projects.
+
+Q: What is typosquatting in container registries?	Maliciously creating image names similar to popular ones to trick users into pulling the wrong image.
+
+Q: How is a container image uniquely identified?	By FQID — Fully Qualified Image Identification (registry/username/image_name).
+
+Q: Example of a Docker CLI command to pull an image:	docker pull registry_name/username/image_name
+
+Q: What is a Disk Array?	A manageable pool of disks with redundancy, often external to servers in datacenters.
+
+Q: What is JBOD?	"Just a Bunch of Disks" — disks without redundancy or advanced management.
+
+Q: What is Block Access?	Accessing fixed-size data blocks (e.g., sectors) directly from storage.
+
+Q: What is File Access?	Accessing named files with metadata managed by a file system (e.g., FAT32, NTFS).
+
+Q: What is Record Access used for?	Structured database data accessed using SQL, ODBC, or JDBC.
+
+Q: What does SCSI use to address disk data?	Logical Block Addressing (LBA), typically 512 bytes per block.
+
+Q: Difference between PATA and SATA?	PATA uses parallel ribbon cables (older); SATA uses serial interface (faster, up to 6 Gbps).
+
+Q: What is Thin Provisioning?	Allocating storage blocks only when they are actually used.
+
+Q: What is RAID 0?	Block striping without redundancy — higher performance, no fault tolerance.
+
+Q: What is RAID 1?	Mirroring — duplicates data for redundancy and improved read performance.
+
+Q: What is RAID 5?	Block striping with distributed parity — tolerates one disk failure.
+
+Q: What is RAID 6?	Block striping with double distributed parity — tolerates two disk failures.
+
+Q: What is the key XOR property used in RAID parity?	A ⊕ B ⊕ B = A (used to recover lost data).
+
+Q: Why can RAID 4 have a bottleneck?	A single dedicated parity disk handles all parity updates.
+
+Q: Difference between RAID 0+1 and RAID 1+0?	RAID 0+1 = stripe then mirror; RAID 1+0 = mirror then stripe (more fault tolerant).
+
+Q: What is the difference between synchronous and asynchronous replication?	Synchronous waits for secondary write completion; asynchronous acknowledges before secondary write finishes.
+
+Q: What is DAS?	Direct Attached Storage — internal storage connected directly to a server.
+
+Q: What is the main difference between Fibre Channel and iSCSI?	Fibre Channel is high-performance but expensive; iSCSI runs over TCP/IP and is cheaper/easier to manage.
+
+Q: What is Storage Virtualization?	Abstracting physical storage so applications don't care where or how data is stored.
+
+Q: Difference between In-Band and Out-of-Band Virtualization?	In-band: control + data through appliance (simpler, possible bottleneck).Out-of-band: control separate, data direct (higher performance, more complex).
+
+Q: What is virtual storage?	A logical view of storage where partitions and file systems abstract physical disks.
+
+Q: What is thin provisioning?	Allocating storage blocks only when they are actually used.
+
+Q: What was RAID originally called?	A: Redundant Array of Inexpensive Disks.
+
+Q: What are the three main goals of RAID?	Availability, performance, and capacity.
+
+Q: What is synchronous replication?	Writes complete only after finishing on secondary storage (guaranteed recovery, slower).
+
+Q: What is asynchronous replication?	Writes are acknowledged before secondary completion (faster but risk of data loss).
+
+Q: What does Fibre Channel define?	ANSI T11 standard for high-speed Storage Area Networks (SANs).
+
+Q: Why is it called "Fibre" Channel instead of "Fiber"?	ISO adopted the French spelling when copper support was added to reduce fiber-only association.
+
+Q: Does Fibre Channel only support fiber optic cables?	No, it supports both fiber optic and copper.
+
+Q: What is a WWN in Fibre Channel?	A 64-bit unique World Wide Name identifying an HBA.
+
+Q: What protocol does FC-2 use for routing?	A: Fibre Channel Shortest Path First (FSPF), a link-state protocol.
+
+Q: What layer handles encoding in Fibre Channel?	FC-1.
+
+Q: What layer handles cables and connectors in Fibre Channel?	FC-0.
+
+Q: Which Fibre Channel class is most common?	Class 3 (datagram service, no delivery confirmation).
+
+Q: What is the main advantage of Fibre Channel over iSCSI?	Highest performance for mission-critical applications.
+
+Q: What is the main advantage of iSCSI over Fibre Channel?	Lower cost and easier implementation.
+
+Q: What problem does VSAN solve?	Provides isolated virtual fabrics with separate fabric services (like VLANs).
+
+Q: In in-band virtualization, where does data flow?	Through the virtualization appliance.
+
+Q: Major disadvantage of in-band virtualization?	Potential bottleneck and single point of failure.
+
+Q: In out-of-band virtualization, where does data flow?	Directly between host and storage (control via namespace server).
+
+Q: Major advantage of out-of-band virtualization?	Higher throughput and better scalability.
+
+Q: What is a Distributed File System (DFS)?	A system that allows users to access files from shared storage with location transparency.
+
+Q: What is location transparency in DFS?	Users see a single namespace regardless of where files are physically stored.
+
+Q: What does file locking in DFS prevent?	Simultaneous conflicting edits from different users.
+
+Q: What is one core design principle of GFS?	Component failures are expected and tolerated.
+
+Q: What is the default chunk size in GFS?	A: 64 MB.
+
+Q: How many replicas does GFS store per chunk by default?	3 replicas.
+
+Q: What does the GFS master store?	Metadata: namespace, ACLs, file-to-chunk mappings, and chunk locations.
+
+Q: Do clients read/write file data through the GFS master?	No, they only ask the master for chunk locations.
+
+Q: What guarantees consistency during GFS writes?	Primary-based replication with leases and version numbers.

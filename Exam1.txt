@@ -1,0 +1,187 @@
+Q: What are the main industry focus areas of Computer Science?	A: Software development, data analytics, AI, machine learning, cloud computing, and security.
+
+Q: Why isn't theory of computation enough to "make money"?	A: Because making money requires understanding user needs, business models, and current technology—not just theory.
+
+Q: How do software engineers stay relevant?	A: Read research papers, follow tech news, try new products, and keep up with AI advancements.
+
+Q: What is the key to monetizing software?	A: Identifying user needs, finding gaps, and applying the right business model.
+
+Q: Why is understanding business models important for developers?	A: It determines how software generates revenue and scales.
+
+Q: What is open-source software?	A: Software with publicly available source code that can be modified and redistributed.
+
+Q: How do open-source projects make money?	A: Through reputation, support, consulting, and enterprise services.
+
+Q: Examples of open-source software?	A: Linux, Android, Docker, Firefox.
+
+Q: What is free-download (closed-source) software?	A: Free software with proprietary source code used to attract users.
+
+Q: Examples of free-download closed-source software?	A: Adobe Acrobat Reader, Google Chrome, Walmart, Best Buy apps.
+
+Q: What is "free with purchase" software?	A: Software bundled with hardware purchases.
+
+Q: Examples of free-with-purchase software?	A: macOS, Amazon Alexa, Google Nest Hub, Comma AI.
+
+Q: What is free-with-advertisement software?	A: Software that generates revenue through ads.
+
+Q: Examples of ad-based software?	A: Facebook, Google Search/Maps, YouTube.
+
+Q: What is free with software tax?	A: Platforms take a percentage of revenue from creators.
+
+Q: Examples of software tax platforms?	A: Apple App Store, Google Play Store.
+
+Q: What is a license purchase model?	A: One-time payment to activate software.
+
+Q: Examples of license purchase software?	A: Microsoft Windows, computer games, paid mobile apps.
+
+Q: What is license + upgrade purchase?	A: Free updates but paid major upgrades.
+
+Q: Risk of outdated licensed software?	A: Security vulnerabilities.
+
+Q: Example of license + upgrade software?	A: VMware Workstation.
+
+Q: What is a freemium model?	A: Free version with limitations and paid subscription for full access.
+
+Q: Examples of freemium software?	A: Evernote, Overleaf.
+
+Q: What is a premium model?	A: Mandatory subscription after a trial period.
+
+Q: Examples of premium software?	A: Adobe Creative Cloud, Microsoft Office 365.
+
+Q: What does XaaS stand for?	A: Everything as a Service.
+
+Q: How does XaaS pricing work?	A: Users pay only for what they use, often with a free tier.
+
+Q: Examples of XaaS platforms?	A: iCloud, Dropbox, ChatGPT, Duo Security, Google Drive.
+
+Q: What is IaaS?	A: Infrastructure as a Service—virtual machines, storage, networking.
+
+Q: Example of IaaS?	A: AWS EC2.
+
+Q: What is PaaS?	A: Platform as a Service—hosted environment for building apps.
+
+Q: Examples of PaaS?	A: Google App Engine, cloud gaming platforms.
+
+Q: What is SaaS?	A: Software delivered over the cloud.
+
+Q: Examples of SaaS?	A: Google Drive, Microsoft 365.
+
+Q: IaaS vs PaaS vs SaaS?	A: IaaS = Host, PaaS = Build, SaaS = Consume.
+
+Q: Efficiency benefit of XaaS?	A: Faster, more reliable development.
+
+Q: Cost benefit of XaaS?	A: No physical IT infrastructure and subscription-based pricing.
+
+Q: Scalability benefit of XaaS?	A: Easily scale resources and experiment safely.
+
+Q: ROI benefit of XaaS?	A: Access to high-quality services and increased returns.
+
+Q: What causes cloud downtime?	A: Internet dependency and service outages.
+
+Q: Performance risks in cloud computing?	A: Bandwidth limits, latency, storage bottlenecks.
+
+Q: What is vendor lock-in?	A: Dependence on a single provider making migration difficult.
+
+Q: Major security risks in cloud systems?	A: Data breaches, credential theft, isolation failures.
+
+Q: What is a public cloud?	A: Cloud services shared by many users over the internet.
+
+Q: Examples of public cloud providers?	A: AWS, Google Cloud.
+
+Q: What is a private cloud?	A: Cloud infrastructure dedicated to one organization.
+
+Q: Who uses private clouds?	A: Banks, healthcare orgs, large enterprises.
+
+Q: What is a hybrid cloud?	A: Combination of on-premises and cloud infrastructure.
+
+Q: Use cases for hybrid cloud?	A: Seasonal businesses, TurboTax, legacy systems.
+
+Q: What is a community cloud?	A: Cloud shared by organizations with common compliance needs.
+
+Q: Factors when choosing a cloud deployment model?	A: Security, cost, scalability, control, and performance.
+
+Q: What is cloud migration?	A: Moving data or applications to the cloud or between clouds.
+
+Q: What is rehosting?	A: Moving applications to the cloud without changes.
+
+Q: What is replatforming?	A: Making small changes to optimize for the cloud.
+
+Q: What is rebuilding?	A: Rewriting applications from scratch.
+
+Q: What is replacing?	A: Retiring old apps and using cloud-native solutions.
+
+Q: What is cloud computing?	A: On-demand access to shared computing resources over the internet with minimal management effort.
+
+Q: What are the 5 NIST characteristics of cloud computing?	A: On-demand self-service, broad network access, resource pooling, rapid elasticity, measured service.
+
+Q: What is resource pooling?	A: Cloud providers dynamically allocate shared resources to multiple customers based on demand.
+
+Q: What is rapid elasticity?	A: Ability to quickly scale resources up or down as demand changes.
+
+Q: What is measured service?	A: Users pay only for the resources they consume.
+
+Q: Which model offers the most user control?	A: IaaS.
+
+Q: Which model offers the least user responsibility?	Saas
+
+Q: Which migration strategy requires the most effort?	A: Refactoring.
+
+Q: Which migration strategy is fastest?	A: Rehosting.
+
+Q: What is the freemium model?	A: Basic features are free; users pay for premium features.
+
+Q: What is "free with advertisement"?	A: Revenue is generated through ads shown to users.
+
+Q: What is a software tax model?	A: Platform takes a percentage of revenue from sellers or developers.
+
+Q: What is a UPS?	A: Provides short-term power during outages until generators start.
+
+Q: What is a PDU?	A: Distributes electrical power to servers.
+
+Q: What is an ATS?	A: Automatically switches power from utility to generator.
+
+Q: What provides long-term backup power?	A: Generators.
+
+Q: What protects against overcurrent?	A: Circuit breakers.
+
+Q: What is a CRAC?	A: Computer Room Air Conditioner using refrigerant-based cooling.
+
+Q: What is a CRAH?	A: Computer Room Air Handler using chilled water.
+
+Q: What is hot aisle / cold aisle containment?	A: Physical separation of hot and cold airflows.
+
+Q: What causes hot air recirculation?	A: Poor airflow management and containment.
+
+Q: What is PUE?	A: Total facility power ÷ IT equipment power.
+
+Q: What is a good PUE value?	close to 1
+
+Q: What does high PUE indicate?	A: Inefficient power usage.
+
+Q: What is WUE?	A: Water usage per unit of energy consumed.
+
+Q: What are Scope 1 emissions?	A: Direct emissions (e.g., backup generators).
+
+Q: What are Scope 2 emissions?	A: Indirect emissions from purchased electricity.
+
+Q: What are Scope 3 emissions?	A: Supply chain and indirect activities.
+
+Q: What is virtualization?	A: Running multiple virtual machines on a single physical machine.
+
+Q: What is a hypervisor?	A: Software that manages virtual machines.
+
+Q: What is live migration?	A: Moving running VMs between physical hosts without downtime.
+
+Q: Why is GPU virtualization important?	A: Enables shared access to GPUs for AI and high-performance workloads.
+
+Q: What does the Application layer do?	A: User-facing protocols like HTTP.
+
+Q: What does the Transport layer do?	A: Reliable data transfer (TCP/UDP).
+
+Q: What does the Network layer do?	A: Routing and IP addressing.
+
+Q: What does the Data Link layer do?	A: MAC addressing and frame delivery.
+
+Q: What is IDCMS?	A: Infrastructure Data Center Management System for monitoring facilities.
+
+Q: What is AIOps?	A: Using AI to predict failures and automate operations.

@@ -1,0 +1,110 @@
+What is the internet	Vast, interconnected "network of networks" that enables distributed applications
+
+What is a protocol?	A common language/rules that allow devices to communicate
+
+What is a packet	A small chunk of data containing payload and header
+
+What is the role of a server	provides services/resources
+
+Q: What is a client?	A: A device that accesses services from a server.
+
+Q: What does the Application layer do?	A: Supports network applications (HTTP, FTP, SMTP).
+
+Q: What does the Transport layer do?	A: Process-to-process data transfer (TCP, UDP).
+
+Q: What does the Network layer do?	A: Routes packets using IP addresses.
+
+Q: What does the Link layer do?	A: Transfers data between neighboring devices (Ethernet).
+
+Q: What is encapsulation?	A: Each layer wraps data with its own header.
+
+Q: Key features of UDP?	A: Connectionless, fast, unreliable, no ordering.
+
+Q: Key features of TCP?	A: Reliable, ordered, congestion-controlled, connection-oriented, full duplex.
+
+Q: What is AIMD?	A: Additive Increase, Multiplicative Decrease (TCP congestion control).
+
+Q: What does a switch operate on?	A: MAC addresses (Layer 2).
+
+Q: What does a router operate on?	A: IP addresses (Layer 3).
+
+Q: What are two main functions of the network layer?	A: Forwarding (data plane) and Routing (control plane).
+
+Q: Typical datacenter scale?	A: ~100k servers, 100s of PB storage, 100s Tbps bandwidth, 10-100 MW power.
+
+Q: What is bisection bandwidth?	A: Bandwidth between two halves of a network.
+
+Q: What is tail latency?	A: High percentile latency (e.g., 99.9th percentile).
+
+Q: Why is tail latency critical in DCs?	A: Parallel applications wait for the slowest flow.
+
+Q: Advantages of ToR?	A: Less cabling, modular, easier troubleshooting, flexible placement.
+
+Q: Disadvantage of ToR?	A: Increased number of switches.
+
+Q: Key difference from ToR?	A: Switches placed in separate rack instead of inside server racks.
+
+Q: Three layers?	A: Access → Aggregation → Core.
+
+Q: What does nonblocking mean?	A: Any free input can connect to any free output.
+
+Q: Strict-sense nonblocking condition?	A: m ≥ 2n − 1.
+
+Q: Rearrangeably nonblocking condition?	A: m ≥ n.
+
+Q: Who proposed VLB?	A: Leslie Valiant
+
+Q: What is VLB?	A: Randomized routing via intermediate node to distribute traffic evenly.
+
+Q: Two phases of VLB?	A: 1. Random intermediate hop
+
+Q: Why does VLB reduce congestion?	A: Randomization avoids traffic hotspots.
+
+Q: What model is required for VLB guarantees?	A: Hose model (per-ToR bandwidth must not exceed link capacity).
+
+Q: Data plane responsibilities?	A: Packet forwarding, filtering, scheduling.
+
+Q: Control plane responsibilities?	A: Compute routing/forwarding tables.
+
+Q: Core SDN idea?	A: Separation of control and data planes + logical centralization.
+
+Q: Why centralized control?	A: Easier management, flexibility, traffic engineering.
+
+Q: Three defining SDN features?	A: Hardware abstraction, programmability, centralized policy control.
+
+Q: What is OpenFlow?	A: Match + action forwarding abstraction.
+
+Q: Flow table components?	A: Match fields, actions, priority, counters.
+
+Q: What is a network OS?	A: Controller maintaining global network state.
+
+Q: Example SDN controllers?	A: OpenDaylight, ONOS
+
+Q: What is network virtualization?	A: Creating multiple virtual networks on shared physical infrastructure.
+
+Q: Why is it valuable? (Network Virtualization)	A: Enables multi-tenancy in datacenters.
+
+Q: Four types of delay?	A: Processing, Transmission, Propagation, Queuing.
+
+Q: Which delay dominates in DCs?	A: Queuing delay.
+
+Q: What are mice flows?	A: Short, latency-sensitive flows.
+
+Q: What are elephant flows?	A: Large, throughput-heavy flows.
+
+Q: What does DCTCP use?	A: ECN marking when queue > K.
+
+Q: How does DCTCP reduce window?	A: Based on fraction of marked packets.
+
+Q: Why does DCTCP work well in DCs?	A: Low queue occupancy, smooth rate control, burst tolerance.
+
+Q: What is head-of-line blocking?	A: One packet blocks others behind it in queue.
+
+Q: Two queue locations?	A: Input queue, output queue.
+
+Q: Scheduling options?	A: FIFO, priority, round robin.
+
+Goals of Ideal congestion control:	Detect exact congestion location
+Fine-grained feedback
+Minimal feedback delay
+Instant reaction

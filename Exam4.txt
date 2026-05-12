@@ -1,0 +1,289 @@
+What is the primary trade-off in cybersecurity?	The battle between achieving desired behaviors and preventing undesired behaviors.
+
+Why is security often considered secondary to functionality?	Organizations prioritize functionality because no product means no need for security.
+
+What does the CIA Triad stand for?	Confidentiality, Integrity, Availability.
+
+What does confidentiality in cybersecurity mean?	Keeping sensitive information secret.
+
+What does integrity in cybersecurity refer to?	Ensuring that data remains unchanged and accurate.
+
+What is meant by availability in cybersecurity?	Ensuring timely and reliable access to information and services.
+
+What are the Three A's in cybersecurity?	Authentication, Authorization, Accounting.
+
+What is the purpose of authentication?	To confirm someone's identity.
+
+What does authorization ensure?	It confirms someone's permissions to access resources.
+
+What is risk in cybersecurity?	Risk is defined as the likelihood of an event occurring multiplied by its impact.
+
+What are the steps involved in threat modeling?	Identifying assets, understanding architecture, recognizing threats, assessing risks, and defining mitigation strategies.
+
+What is a vulnerability in cybersecurity?	Weak points in the system that can be exploited by attackers.
+
+What is an exploit?	A vulnerability that can be taken advantage of by an attacker.
+
+What are attack vectors?	Methods used to attack a system.
+
+What is an attack surface?	The collection of system components that can be exploited by attackers.
+
+What are the goals of malicious actors?	Theft, espionage, and sabotage.
+
+What distinguishes hacking from insider threats?	Hacking involves gaining access from outside an organization, while insider threats come from within.
+
+What is adversarial thinking in cybersecurity?	Understanding potential attacks to secure a system effectively.
+
+What are common threats in information security?	Malware, privilege escalation, stolen credentials, and data tampering.
+
+What are some countermeasures for system security?	Authentication, encapsulation, isolation, anti-virus, and system logging.
+
+What is the role of network security?	To ensure that devices only access authorized information and prevent unauthorized access.
+
+What is eavesdropping in network security?	Monitoring communication between users.
+
+What is the purpose of cryptography?	To transform data into an unreadable format for unauthorized users.
+
+What is a Distributed Denial of Service (DDoS) attack?	An attack that prevents normal users from accessing a service.
+
+What is the significance of physical security in cybersecurity?	It involves managing risks in data centers, including pest control and environmental threats.
+
+What is the most effective way to defend a system?	Powering off the system or cutting network connections to prevent hacking.
+
+What are the five key objectives of cryptography?	Confidentiality, integrity, authenticity, non-repudiation, and access control.
+
+What is the difference between a block cipher and a stream cipher?	A block cipher encrypts data block by block and requires padding, while a stream cipher encrypts data as it flows without padding.
+
+What is a substitution cipher?	A method of encryption that converts one letter to another.
+
+What is a transposition cipher?	A method of encryption that changes the position of letters in the text.
+
+What is the only cipher that can achieve unconditional security?	One-time pad.
+
+What is symmetric encryption?	A method where the same key is used for both encryption and decryption.
+
+What is asymmetric encryption?	A method that uses mathematically related key pairs for encryption and decryption, involving public and private keys.
+
+What is hybrid encryption?	A method that combines symmetric and asymmetric encryption, using asymmetric to distribute a symmetric key.
+
+What is at-rest encryption?	Encryption of data when it is stored on a cloud server.
+
+What is in-transit encryption?	Encryption of data while it is being transmitted to or from a cloud server.
+
+What is the purpose of TLS in in-transit encryption?	To secure data during transmission by establishing a secure connection between client and server.
+
+What is homomorphic encryption?	A method that allows computations on encrypted data without needing to decrypt it first.
+
+What are the types of homomorphic encryption?	Partially homomorphic encryption (PHE), somewhat homomorphic encryption (SHE), and fully homomorphic encryption (FHE).
+
+What is searchable encryption?	A method that allows searching through encrypted data without decrypting it first.
+
+What is a zero-knowledge proof?	A method that allows a user to prove their identity without revealing their actual secret.
+
+What is the Ali Baba Cave example used to illustrate?	It illustrates how a person can prove knowledge of a secret without revealing the secret itself.
+
+What is the primary concern when sending data to the cloud?	Data breaches, insider threats, regulatory compliance, and the risk of outsourcing sensitive tasks.
+
+What is the role of a key encryption key (KEK)?	It encrypts data encryption keys (DEKs) to secure access to encrypted data.
+
+What is the significance of the TLS handshake?	It establishes a secure connection by negotiating encryption parameters between client and server.
+
+What happens during the certificate verification step of TLS?	The client verifies the server's digital certificate with a Certificate Authority (CA).
+
+What is the key distribution problem in symmetric encryption?	The challenge of securely sharing the encryption key with the parties involved.
+
+What is a digital certificate?	An electronic document that uses a digital signature to bind a public key with an identity.
+
+What is the purpose of a search token in searchable encryption?	To allow the cloud to match encrypted keywords without revealing the contents.
+
+What is the main advantage of hybrid encryption?	It combines the efficiency of symmetric encryption with the secure key distribution of asymmetric encryption.
+
+What does the term 'data at rest' refer to?	Data that is stored and not actively being transmitted or processed.
+
+What is the main function of the public key in asymmetric encryption?	To encrypt data that can only be decrypted by the corresponding private key.
+
+What is a side channel attack?	An attack that steals information from a victim by observing physical implementation rather than breaking theoretical properties.
+
+What are common methods used in side channel attacks?	Timing attacks and power analysis.
+
+What is instruction speculation?	When a CPU guesses ahead and starts executing instructions before knowing for sure they're needed to speed up processing.
+
+What is a cache timing attack?	A method that manipulates cache to a known state, waits for victim activity, and examines changes to infer information.
+
+What is the 'Flush and Reload' technique?	A cache timing attack where relevant addresses are flushed from cache, then reloaded and timed to see if the victim accessed them.
+
+What is the Spectre vulnerability?	A vulnerability that allows an attacker to manipulate a CPU's branch predictor to access restricted information.
+
+What are cross VM attacks?	Attacks where an attacker runs a VM on the same host as the victim to measure shared resources.
+
+What is a covert channel attack?	A method to communicate information between two computer processes that are not allowed to communicate by hiding info in shared resources.
+
+What are the two types of covert channels?	Storage channels and timing channels.
+
+What is a storage channel in covert attacks?	Data transmitted by writing or abstaining from writing, such as writing into RAM.
+
+What is a timing channel in covert attacks?	Data modulated into the timing or occurrence of events, such as the timing between network packets.
+
+What is coresidency in cloud computing?	The situation where virtual machines from different customers are placed on the same physical host.
+
+Why is coresidency studied?	Due to security risks from side-channel attacks and performance impacts from resource contention.
+
+What is Amazon EC2?	A cloud computing service that allows users to create virtual servers with various configurations.
+
+What are the user options for Amazon EC2?	Region, availability zone, and instance type.
+
+What is the significance of availability zones in Amazon EC2?	Each availability zone has independent failure modes, providing redundancy and reliability.
+
+What is cloud cartography?	Mapping cloud infrastructure to predict and facilitate co-residency with a target.
+
+What is the purpose of domain mapping in cloud infrastructure?	To map internal and external domain names to IP addresses for better resource management.
+
+What is a timing channel?	A method where information is hidden by triggering or delaying events at specific time intervals.
+
+What is the role of TCP/IP headers in covert channels?	TCP/IP headers can serve as carriers for covert channels by hiding data in fields ignored during packet processing.
+
+How can ICMP echo requests be used in covert channels?	They can tunnel arbitrary user data through the request/reply mechanism.
+
+What is the bandwidth capacity of DNS for holding arbitrary text?	110-220 bytes per request.
+
+What is the significance of timing in network channels?	Information can be hidden by varying the timing of packet transmissions.
+
+What is a power analysis attack?	An attack that reads bits from powerline traces to infer secret information.
+
+What is differential power analysis?	A method that looks for statistical differences in power traces based on guesses of a key bit.
+
+What is a timing attack on software optimization?	An attack that leverages key-dependent timings of modular exponentiations in RSA.
+
+What is the impact of speculative execution on security?	It can lead to vulnerabilities like Spectre, where incorrect execution can affect cache state.
+
+What is the primary function of identity management?	To manage individual, entities, or group authentication, authorization, roles, and privileges across the system.
+
+Why is centralized identity management beneficial?	It allows for tracking and managing identities across applications, uniform security settings, and cost control by reducing duplicated identity management.
+
+What is activation in the context of identity management?	The creation of user identity, which is a one-time event that assigns privileges.
+
+What does authentication refer to?	The process of verifying the identity of users, typically using credentials that include a public known part and one or more secrets.
+
+What is multi-factor authentication?	A security scheme requiring two or more factors of something you know, something you have, and something you are.
+
+What are the pros of password-based authentication?	It is simple, easy to implement, requires no special hardware, and is widely used across systems.
+
+What are the cons of password-based authentication?	Weak passwords can be easily guessed, password reuse increases risk, phishing attacks can occur, databases can be leaked, and forgotten passwords lead to support overhead.
+
+What is knowledge-based authentication?	An authentication method that verifies a user's identity based on personal information or answers to pre-set questions.
+
+What is static knowledge-based authentication?	A method where users set answers to predefined questions during registration.
+
+What is dynamic knowledge-based authentication?	A method using system-generated questions based on public or private data sources, without prior user setup.
+
+What is the process of account recovery when a password is forgotten?	Initiate recovery, input associated communication channel (email), obtain a temporary link, and reset the password through that link.
+
+What is the role of email addresses in account recovery?	Email addresses serve as a master key for all accounts and should remain private.
+
+What is co-residency in cloud environments?	The situation where multiple virtual machines (VMs) share the same physical machine, which can lead to security vulnerabilities.
+
+What are some methods to detect co-residency?	Matching domain 0 IP addresses, small round trip times (RTT), and numerically close internal IP addresses.
+
+What is the refined strategy for an attacker to achieve co-residency?	Targeting recently-launched instances to take advantage of the tendency for EC2 to assign fresh instances to the same small set of machines.
+
+What is the HomeAlone VM methodology?	A detection system using cache prime-probe to verify sole access to a physical device by monitoring cache usage.
+
+What are the classifications of VMs in a cloud environment?	Friendly (same organization), Foe (not from the same organization), Benign Foe (not actively attacking), and Adversarial Foe (actively attempting to exploit co-residency).
+
+What is the significance of authentication strength?	It is the first line of defense for accessing applications and sensitive data; more secrets required generally means a more secure scheme.
+
+What are some authentication methods?	Password-based, two-factor/multi-factor authentication, biometric authentication, knowledge-based authentication, behavioral authentication, single sign-on, token-based, and certificate-based authentication.
+
+What is the risk of password reuse across sites?	It increases the risk of credential exposure and security breaches.
+
+What is the impact of phishing attacks on authentication?	Phishing can trick users into revealing their credentials, compromising their accounts.
+
+What is the cache side-channel attack?	An attack that exploits the cache memory to gather information or disrupt services by monitoring cache usage patterns.
+
+How can organizations verify physical isolation in cloud environments?	Through service level agreements (SLA) that guarantee physical isolation and using methodologies like HomeAlone detection.
+
+What is the importance of cache monitoring in VM security?	It helps detect unauthorized access and potential co-residency threats by analyzing cache usage patterns.
+
+What is multi-factor authentication (MFA)?	A security method requiring users to provide two or more types of credentials before gaining access to services.
+
+What are the three types of credentials used in MFA?	Something you know (password), something you have (token), and something you are (biometric).
+
+Name a common method of MFA.	SMS or email verification codes.
+
+What is token-based authentication?	A secure method for controlling access to APIs where clients authenticate once and use a token for subsequent requests.
+
+What happens after a user logs in with valid credentials in token-based authentication?	The server issues a token, usually a JSON Web Token (JWT) or an opaque token.
+
+How does token validation work in token-based authentication?	The API checks the token's validity; if valid, the request is processed; if not, it is rejected.
+
+What is Single Sign-On (SSO)?	A user authentication process that allows users to log in once and gain access to multiple applications without needing to log in again.
+
+How does SSO improve user experience?	Users do not need to remember separate credentials for each application.
+
+What role does an identity provider (IdP) play in SSO?	The IdP authenticates the user and issues a token or session for access to multiple service providers.
+
+What is Zero Knowledge Authentication?	A method allowing users to prove their identity without revealing their actual secret to the system.
+
+Describe the process of Zero Knowledge Authentication.	The user registers by providing a public commitment to their secret and generates a cryptographic proof during login.
+
+What is biometric authentication?	Authentication using unique biological traits such as fingerprints, facial recognition, or iris scans.
+
+What is behavioral authentication?	Authentication based on patterns of user behavior, such as typing patterns or mouse movements.
+
+Why are passwords often disliked as an authentication method?	People find them easy to forget, they can be easily cracked, and users often reuse them across multiple sites.
+
+What is the purpose of the Ali Baba Cave analogy?	To illustrate the concept of Zero Knowledge Proofs (ZKP) in a scenario where one party can prove knowledge of a secret without revealing it.
+
+In the Two Balls analogy, how does Peggy prove to Victor that the balls are different colors?	By indicating whether Victor switched the balls without revealing which is which.
+
+How does the Sudoku example demonstrate a proof without revealing the solution?	Peggy masks the board and shows only known numbers while proving she has the solution.
+
+What is the significance of token expiry in token-based authentication?	Tokens usually expire after a set time for security, requiring clients to use refresh tokens to obtain new access tokens.
+
+What is a common usability sacrifice made for enhanced account security?	Users may dislike MFA methods, but they are necessary for better security.
+
+What is the risk of leaving access tokens in code commits?	It can lead to unauthorized access if the code is exposed.
+
+What is the role of IT teams in SSO?	They manage all access through a single identity system, enhancing security and compliance.
+
+What are some examples of biometric authentication methods?	Fingerprint recognition, facial recognition, iris or retina scans, and voice recognition.
+
+What are physical security risks in data centers?	Natural disasters, hardware theft, and tampering.
+
+What natural disasters can physically destroy data center infrastructure?	Earthquakes, floods, fires, etc.
+
+What are hypervisor attacks?	Exploiting vulnerabilities in virtualization platforms to gain control over VMs.
+
+What can misconfigurations in a data center lead to?	Exposure of sensitive data or creation of attack vectors.
+
+What is power oversubscription in data centers?	Placing more servers on the power infrastructure than it can support.
+
+What is a consequence of power oversubscription?	Allows more servers to be hosted without upgrading power infrastructure.
+
+How can increasing supply air temperature affect cooling costs?	Increasing by 1°C can save approximately 2-5% of cooling power.
+
+What is a power-intensive workload?	Workloads that yield very different power consumptions even at 100% CPU utilization.
+
+What is the impact of CPU utilization on power consumption?	CPU utilization cannot fully reflect the power consumption of the server.
+
+What is a power attack in the context of cloud services?	Achieving coresidency with a target VM and running power-intensive workloads to trigger oversubscription.
+
+What is VM migration?	Moving a VM under heavy load to another location with less utilization, consuming significant power.
+
+What is thermal regulation in data centers?	Setting supply air temperature automatically based on workload to optimize cooling.
+
+What happens if a data center runs in a hot environment?	CPU throttling occurs, affecting the entire data center.
+
+What is thermal residue?	The temperature that remains after a workload has finished executing.
+
+What is the trend regarding supply air temperature in data centers?	Raising the highest set temperature from 75°F to 85°F or higher.
+
+What can happen if workloads are accidentally synchronized in a data center?	It can lead to overheating and potential device failures.
+
+What are some examples of thermal intensive workloads?	Different workloads yield different thermal dissipation even at 100% CPU utilization.
+
+What is the significance of SPECCPU2006 in data centers?	It is a benchmark that shows varying power and thermal characteristics of workloads.
+
+What can result from successful power attacks on VMs?	CPU throttling and device failures in CPUs and storage.
+
+What are insider threats in data centers?	Risks posed by individuals within the organization who may misuse their access.
